@@ -1,0 +1,116 @@
+body{
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color:hsl(210, 46%, 95%);
+    background-color:  hsl(0, 0%, 81%);
+    padding:5%;
+}
+.row{
+    position: relative;
+}
+.clifford{
+    background-color: hsl(263, 55%, 52%);
+    width:610px;
+    z-index: -1;
+}
+
+.walters{
+    background-color: hsl(217, 19%, 35%);
+    width:300px;
+    left:650px;
+}
+.harmon{
+    background-color:  hsl(0, 0%, 100%);
+    color:hsl(217, 19%, 35%);
+    width:280px;
+    top:350px;
+}
+.abrams{
+    background-color: hsl(219, 29%, 14%);
+    width:630px;
+    top:350px;
+    left:320px
+}
+.whittle{
+    background-color: hsl(0, 0%, 100%);
+    color:hsl(217, 19%, 35%);
+    width:260px;
+    left:990px;
+    height:650px;
+}
+.clifford,.walters,.harmon,.abrams,.whittle{
+    padding:2%;
+    border-radius:10px;
+    position: absolute;
+}
+.clifford,.walters,.harmon,.abrams{
+    height:300px
+}
+.profile{
+    border-radius: 50%;
+    width: 40px;
+    float:left;
+    margin-right:10px;
+}
+.name{
+    display: block;
+}
+.name,h5{
+    font-weight: 600; 
+}
+h5{
+    padding-bottom: 20px;
+}
+.vg{
+    opacity: 50%;
+} 
+.review{
+    opacity:70%;
+}
+.clifford .profile, .abrams .profile{
+    border:3px solid  hsl(263, 53%, 69%);
+}
+.quote{
+    position:absolute;
+    left:400px;
+    top:0;
+    z-index: -1;
+}
+
+.attribution { 
+    font-size: 11px; 
+    position: absolute;
+    color:black;
+    left:600px;
+    top:800px
+}
+.attribution a {
+     color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 670px) {
+    .row,.col,.attribution{
+        position: static;
+        height:auto;
+        width: auto;
+        display: block;
+        margin:30px 20px 30px 20px;
+    }
+    .attribution{
+        text-align:center;
+    }
+    .clifford,.walters,.harmon,.abrams,.whittle{
+        padding:20px;
+        z-index: -1;
+    }
+    .quote{
+        position:absolute;
+        left:240px;
+        top:0px;
+        z-index: -1;
+    }
+    .clifford {
+        position: relative;
+        z-index: -1;
+    }
+  }
